@@ -19,3 +19,9 @@ function QRGenerate(){
         },1000)
     }
 }
+QRText.addEventListener("keypress" , function(event) {
+    if (event.key === "Enter"){
+        event.preventDefault();
+        QRGenerate();
+    }
+});
